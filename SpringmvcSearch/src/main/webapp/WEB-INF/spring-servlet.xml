@@ -13,13 +13,13 @@
  http://www.springframework.org/schema/context/spring-context.xsd
   http://www.springframework.org/schema/tx
  http://www.springframework.org/schema/tx/spring-tx.xsd
- http://www.springframework.org/schema/mvc
+   http://www.springframework.org/schema/mvc
  http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<!-- to enable annotation -->
 	<context:component-scan base-package="springmvcsearch" />
 	
-	<mvc:annotation-driven />
+		<mvc:annotation-driven />
 	<mvc:resources location="/WEB-INF/common/" mapping="/common/**" />
 		
 
@@ -32,7 +32,9 @@
 	</bean>
 	<!-- /WEB-INF/views/hello.jsp view is folder -->
 	
-<!-- 	configuring multipart resolver -->
+	
+	
+	<!-- 	configuring multipart resolver -->
 	<bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
 
 	

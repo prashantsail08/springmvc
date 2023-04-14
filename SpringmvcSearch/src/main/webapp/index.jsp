@@ -1,3 +1,5 @@
 <%
+
 response.sendRedirect("home");
+
 %>

@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -23,15 +21,10 @@
 	<div class="container mt-4">
 
 		<div class="row">
-			<div class="col-md-8 offset-md-2">
+			<div class="col-md-6 offset-md-3">
 				<div class="card">
 					<div class="card-body">
 						<h3 class="text-center">Complex Form</h3>
-						
-						<div class="alert alert-danger" role="alert">
-						
-						<form:errors path="student.*"/>
-						</div>
 
 						<form action="doRegister" method="post">
 
@@ -59,11 +52,13 @@
 								<label for="exampleFormControlSelect1">Select Courses</label> <select
 									name="courses" class="form-control"
 									id="exampleFormControlSelect1" multiple>
+
 									<option>Java</option>
 									<option>Phython</option>
 									<option>C++</option>
 									<option>Spring</option>
 									<option>Hibernate</option>
+
 								</select>
 							</div>
 
@@ -90,26 +85,10 @@
 								</select>
 							</div>
 
-							<div class="card">
-								<div class="card-body">
-									<p>Your Address</p>
+							<div class="container text-center">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
 
-									<div class="form-group">
-										<input type="text" class="form-control"
-											placeholder="Enter Street" name="address.street">
-										<!-- binding -->
-									</div>
-
-									<div class="form-group">
-										<input type="text" class="form-control"
-											placeholder="Enter City" name="address.city">
-									</div>
-
-								</div>
-
-								<div class="container text-center">
-									<button type="submit" class="btn btn-primary">Submit</button>
-								</div>
 						</form>
 
 					</div>

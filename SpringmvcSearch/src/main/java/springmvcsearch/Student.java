@@ -65,7 +65,7 @@ public class Student {
 				+ ", type=" + type + ", address=" + address + "]";
 	}
 	
-	
+
 	
 	
 	

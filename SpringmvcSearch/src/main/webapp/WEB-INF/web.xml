@@ -5,7 +5,7 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   
-   <!-- configure dispatcher servlets -->
+  <!-- configure dispatcher servlets -->
 	<!-- servlets declaration -->
 
 	<servlet>
@@ -19,5 +19,4 @@
 		<!-- <url-pattern>/spring/</url-pattern> it will handel those url which 
 			start from spring -->
 	</servlet-mapping>
-  
 </web-app>

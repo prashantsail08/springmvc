@@ -20,6 +20,11 @@ public class FileUploadController {
 	public String showUploadForm()
 	{
 		System.out.println("fileform");
+		
+		//exception
+		String str = null;
+		System.out.println(str.length());
+		
 		return "fileform";
 	}
 	

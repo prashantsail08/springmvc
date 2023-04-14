@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>${ student }</h1>
+	<div class="container">
+		<form action="welcome">
+			<input name="user" type="text" placeholder="Enter Name">
 
+			<button type="submit">Say Hello</button>
+		</form>
+	</div>
 </body>
 </html>
